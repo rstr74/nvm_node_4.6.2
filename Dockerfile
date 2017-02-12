@@ -20,5 +20,12 @@ ENV PATH      $NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
 
 # Install npm modules
 RUN npm config set unsafe-perm=true
-RUN npm i mocha async request base64-stream bower concat-stream express@4.13.3 express-fileupload file-type gulp html2jade http-server image-size jasmine jasmine-node jshint markdown marked moment moment-range moment-recur moment-spans node-async-runner sequence twix mkdirp body-parser@1.14.2 node-sass@3.4.2 -g
+RUN npm i mocha async request base64-stream -g
+RUN npm i bower concat-stream express@4.13.3 -g
+RUN npm i express-fileupload file-type gulp -g
+RUN npm i html2jade http-server image-size -g
+RUN npm i jasmine jasmine-node jshint markdown marked -g
+RUN npm i moment moment-range moment-recur moment-spans -g
+RUN npm i node-async-runner sequence twix -g
+RUN npm i mkdirp body-parser@1.14.2 node-sass@3.4.2 -g
 
